@@ -1,0 +1,24 @@
+{
+  "name": "scrape-hiking-routes",
+  "version": "1.0.0",
+  "description": "Scrape from caminando entre senderos",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LuisSevillano/scrape-galician-hiking-trails.git"
+  },
+  "scripts": {
+    "start": "rm -rf posts_info.tsv && touch posts_info.tsv && node index.js"
+  },
+  "author": "Luis Sevillano",
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "cheerio": "^1.0.0-rc.1",
+    "fs": "0.0.1-security",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "d3-dsv": "^2.0.0",
+    "p-limit": "^3.1.0"
+  }
+}
